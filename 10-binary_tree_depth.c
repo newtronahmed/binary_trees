@@ -8,7 +8,7 @@
 {
 	if (tree && tree->parent != NULL)
 	{
-		return (binary_tree_depth(tree->parent) + 1)
+		return (binary_tree_depth(tree->parent) + 1);
 	}
-	return (0)
+	return (0);
 }
