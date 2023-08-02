@@ -10,7 +10,7 @@ int max(int h_left, int h_right)
 int check_binary_is_full(const binary_tree_t *tree)
 {
 	if (tree == NULL)
-		return (-1);
+		return (0);
 	if (tree->left || tree->right)
 	{
 		int h_left, h_right = 0;
@@ -42,7 +42,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 
 	result = check_binary_is_full(tree);
 	printf("%d result\n", result);
-	if (result >= 0)
+	if (result > 0)
 	{
 		return (1);
 	}
